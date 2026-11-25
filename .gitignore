@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------
+# KiCad: local / temporary files
+# ---------------------------------------------------------------
+*.kicad_prl
+*.lck
+*.bak
+*-bak
+*~
+_autosave-*
+\#auto_saved_files\#
+fp-info-cache
+*-backups/
+**/.history/
+
+# Routing exchange files (Freerouting)
+*.dsn
+*.ses
+temp-freerouting.*
+
+# Netlist exports
+*.net
+
+# ---------------------------------------------------------------
+# Local archives and early experiments (not part of the release)
+# ---------------------------------------------------------------
+/uwb_node_revA.zip
+/uwb_node/
+/uwb_node_symbols.kicad_sym
+/uwb_node_symbols.bak
+
+# Keep the fabrication outputs (Gerber ZIP, BOM, CPL)
+!uwb_node_revA/production/
+!uwb_node_revA/production/*.zip
+
+# ---------------------------------------------------------------
+# OS / editors
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ---------------------------------------------------------------
+# Firmware build outputs
+# ---------------------------------------------------------------
+build/
+*.uf2
+*.elf
+*.bin
+*.hex
+*.map
+__pycache__/
+
+# ---------------------------------------------------------------
+# Host software
+# ---------------------------------------------------------------
+# Qorvo SDK files (proprietary license, obtain from the SDK)
+host/uci/
+host/uqt_utils/
+host/run_fira_twr*.py
+*.hex
+# Local configuration and measurement data
+host/orquestador_config.json
+host/data/
+data/
+# Python virtual environments
+.venv/
+venv/
+uwb/
